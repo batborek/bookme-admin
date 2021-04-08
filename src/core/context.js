@@ -61,14 +61,17 @@ function CoreContextProvider(props) {
   const getRooms = () => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("mode", "no-cors");
 
     var requestOptions = {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,OPTIONS,POST,PUT",
       method: "GET",
+  
       headers: myHeaders,
       redirect: "follow",
-    };
+      
+    }
 
     fetch("http://api.batborek.com/api/rooms/", requestOptions).then(
       async (response) => {

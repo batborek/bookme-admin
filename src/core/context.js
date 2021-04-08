@@ -40,7 +40,7 @@ function CoreContextProvider(props) {
       redirect: "follow",
     };
 
-    fetch("http://api.batborek.com/api/rooms/", requestOptions).then(
+    fetch("https://api.batborek.com/api/rooms/", requestOptions).then(
       async (response) => {
         console.log(response.status);
         console.log("Room is added successufully");
@@ -69,7 +69,7 @@ function CoreContextProvider(props) {
       redirect: "follow",
     };
 
-    fetch("http://api.batborek.com/api/rooms/", requestOptions).then(
+    fetch("https://api.batborek.com/api/rooms/", requestOptions).then(
       async (response) => {
         const data = await response.json();
         console.log(response.status);

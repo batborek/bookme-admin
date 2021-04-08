@@ -51,6 +51,17 @@ export const AddRoom = () => {
           {!loading && <b>Add</b>}
             </b>
           </button>
+          <button
+            type="button"
+            className="forwardButton3"
+            disabled={false}
+            onClick={() => {setCurrentPage(1)}}
+          > 
+            <b>
+            {loading && <b>Loading</b>}
+          {!loading && <b>Cancel</b>}
+            </b>
+          </button>
         </div>
         </div>
       </div>

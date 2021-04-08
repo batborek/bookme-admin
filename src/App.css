@@ -1,4 +1,3 @@
-
 body {
   text-align: center;
   background-color: #F5F7FA;
@@ -153,30 +152,50 @@ input:-webkit-autofill:active {
   height: 2.5rem;
   width: 25rem;
   margin-top: 5%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border: none;
   background-color: #0070BA;
   box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
 }
-
-.forwardButton2 {
-  left: 2rem;
-bottom: 3rem;
-  position:relative;
-  color: white;
+.forwardButton3 {
+  color:white;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   justify-self: center;
   border-radius: 15px;
   height: 2.5rem;
   width: 25rem;
+  
+ 
+  border: none;
+  background-color: #929292;
+  box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
+}
+.forwardButtons{
+  display: flex;
+  justify-content: space-around;
+}
+.forwardButton2 {
+  left: 2rem;
+  bottom: 3rem;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  justify-self: center;
+  border-radius: 15px;
+  height: 2.5rem;
+  width: 15rem;
   margin-top: 5%;
   margin-bottom: 3rem;
   border: none;
   background-color: #0070BA;
   box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
+.remove-room{
+  background-color: #e84118;
+}
 
 .logo{
   position: absolute;
@@ -298,7 +317,3 @@ caption{
   padding-right: 1rem;
   border-radius: 5px;
 }
-
-
-
-

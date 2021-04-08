@@ -8,10 +8,8 @@ function CoreContextProvider(props) {
   const [price, setPrice] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-
   const [totalSingle, setTotalSingle] = useState(0);
   const [singleRentedRoom, setSingleRentedRoom] = useState(0);
-
   const [totalKing, setTotalKing] = useState(0);
   const [kingRentedRoom, setKingRentedRoom] = useState(0);
 
@@ -58,6 +56,8 @@ function CoreContextProvider(props) {
     );
   };
 
+  var singleRooms = [];
+
   const getRooms = () => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -79,6 +79,8 @@ function CoreContextProvider(props) {
         for (var i = 0, len = data.length; i < len; i++) {
           if (data[i].type === "single") {
             singleRoom++;
+            singleRooms.push([i,data[i]])
+
           }
 
           if (data[i].type === "single") {
@@ -108,7 +110,6 @@ function CoreContextProvider(props) {
         console.log(totalSingle);
         setSingleRentedRoom(rentedSingle);
         console.log(singleRentedRoom);
-
         if (!response.ok) {
           const error = (data && data.message) || response.status;
           console.log(error);
@@ -121,6 +122,7 @@ function CoreContextProvider(props) {
   var availableSingle = totalSingle - singleRentedRoom;
   var availableKing = totalKing - kingRentedRoom;
   const value = {
+    singleRooms,
     totalSingle,
     singleRentedRoom,
     availableSingle,

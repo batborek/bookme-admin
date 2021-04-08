@@ -50,19 +50,31 @@ export const Rooms = () => {
               </tr>
             </tbody>
           </table>
-        </div>
-       
-      </div>
-      <button
+         <div className="forwardButtons"> 
+         <button
           type="button"
           className="forwardButton2"
           disabled={false}
           onClick={() => {setCurrentPage(0)}}
         >
           <b>
-            <b>Add room</b>
+            <b>Add a room</b>
+          </b>
+        </button> <button
+          type="button"
+          className="forwardButton2 remove-room"
+          disabled={false}
+          onClick={() => {}}
+        >
+          <b>
+            <b>Remove a room</b>
           </b>
         </button>
+         </div>
+        </div>
+
+      </div>
+     
     </>
   );
 };

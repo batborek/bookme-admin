@@ -5,8 +5,45 @@ body {
   font-family: sans-serif;
   height: 100%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+input:focus {
+  outline: 0;
+}
+select:focus {
+  outline: 0;
+}
+.defaultOption{
+  background-color: #e7e7e7;
+  color: #e7e7e7;
+}
+
+
+.select-input {
+  text-align-last: center;
+ text-align: center;
+  cursor: pointer;
+  height: 2.4rem;
+  width: 25rem;
+  margin-bottom: 4%;
+  border: none;
+  border-radius: 15px;
+  background-color:white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 img {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   max-width: 13rem;
   height: auto;
 }
@@ -77,6 +114,8 @@ input:-webkit-autofill:active {
   appearance: none;
 }
 
+
+
 .password-input {
   text-align: center;
   border-radius: 15px;
@@ -120,6 +159,23 @@ input:-webkit-autofill:active {
   box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
 }
 
+.forwardButton2 {
+  left: 2rem;
+bottom: 3rem;
+  position:relative;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  justify-self: center;
+  border-radius: 15px;
+  height: 2.5rem;
+  width: 25rem;
+  margin-top: 5%;
+  margin-bottom: 3rem;
+  border: none;
+  background-color: #0070BA;
+  box-shadow: 0px 24px 48px -18px rgba(21, 70, 160, 0.5);
+}
 
 
 .logo{
@@ -220,6 +276,29 @@ caption{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    
   }
 
 }
+
+.addRoomButton{
+  margin-left: 45%;
+  justify-self: center;
+  align-self: center;
+  background-color:#0070BA ;
+  height: 1rem;
+  width: 1rem;
+  color:white;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+}
+
+
+
+

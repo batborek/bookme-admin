@@ -1,8 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { CoreContext } from "../core/context";
 import Logo from "../images/logo.png";
 
 export const AddRoom = () => {
+
+  useEffect(() => {
+   setPrice("");
+   setRoomType("");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   
   const {addRoom,setRoomType, price,setPrice,getRooms,setCurrentPage,loading,setLoading } = useContext(
     CoreContext

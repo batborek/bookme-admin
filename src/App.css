@@ -175,6 +175,13 @@ input:-webkit-autofill:active {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .forwardButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .forwardButton2 {
   left: 2rem;
   bottom: 3rem;
@@ -215,6 +222,11 @@ margin-left: 2rem;
   top: 2rem;
   right: 4rem;
   margin-left: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .Menu{
+    display: none;
+  }
 }
 h1{
   cursor: pointer;
@@ -309,6 +321,11 @@ caption{
 .dropdown-update{
   display: flex;
   margin-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  .dropdown-update {
+    flex-direction: column;
+  }
 }
 .select-input-type, .select-input-id{
   margin-left: 1rem;

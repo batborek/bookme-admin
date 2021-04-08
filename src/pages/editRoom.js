@@ -73,7 +73,7 @@ export const EditRoom = () => {
               defaultValue="default"
               //onChange={(e) => setRoomType(e.target.value)}
             >
-              <option value="default" >Type</option>
+              <option value="default" >Clean</option>
               <option value="single">Single</option>
               <option value="king-size">King Size</option>
             </select>
@@ -82,7 +82,7 @@ export const EditRoom = () => {
               defaultValue="default"
               //onChange={(e) => setRoomType(e.target.value)}
             >
-              <option value="default" >Select Room</option>
+              <option value="default" >Booked</option>
               <option value="single">01</option>
               <option value="king-size">02</option>
             </select>

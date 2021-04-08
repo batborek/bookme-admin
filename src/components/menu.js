@@ -21,7 +21,7 @@ export const Menu = () => {
         <h1 style={currentPage === 4 ? { color: "#0070BA" }: {}}>Employers</h1>
         </div>
         <div  onClick={()=>setCurrentPage(5)}>
-        <h1 style={currentPage === 5 ? { color: "#0070BA" }: {}}>EditRoom</h1>
+        <h1 style={currentPage === 5 ? { color: "#0070BA" }: {}}>Logout</h1>
         </div>
          {/* <div onClick={()=>setCurrentPage(0)}>
         <h1 style={{ color: "red" }}>Log out </h1>

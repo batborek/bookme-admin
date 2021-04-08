@@ -4,6 +4,8 @@ import Employers from "./employers";
 import Finance from "./finances";
 import AddRoom from "./addRoom";
 import Rooms from "./rooms";
+import EditRoom from "./editRoom";
+import RemoveRoom from "./removeRoom";
 import Statistics from "./statistics";
 
 export const Route = () => {
@@ -18,7 +20,8 @@ export const Route = () => {
         {currentPage === 2 && <Statistics />}
         {currentPage === 3 && <Finance />}
         {currentPage === 4 && <Employers />}
-      
+        {currentPage === 5 && <EditRoom />}
+        {currentPage === 6 && <RemoveRoom />}
       </div>
     </>
   );

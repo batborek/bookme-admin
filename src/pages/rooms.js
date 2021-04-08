@@ -62,9 +62,19 @@ export const Rooms = () => {
           </b>
         </button> <button
           type="button"
+          className="forwardButton2 edit-room"
+          disabled={false}
+          onClick={() => {setCurrentPage(5)}}
+        >
+          <b>
+            <b>Edit a room</b>
+          </b>
+        </button>
+        <button
+          type="button"
           className="forwardButton2 remove-room"
           disabled={false}
-          onClick={() => {}}
+          onClick={() => {setCurrentPage(6)}}
         >
           <b>
             <b>Remove a room</b>

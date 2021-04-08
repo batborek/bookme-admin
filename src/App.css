@@ -196,6 +196,9 @@ input:-webkit-autofill:active {
 .remove-room{
   background-color: #e84118;
 }
+.edit-room{
+  background-color: #27ae60;
+}
 
 .logo{
   position: absolute;
@@ -301,6 +304,57 @@ caption{
     
   }
 
+}
+
+.dropdown-update{
+  display: flex;
+  margin-bottom: 2rem;
+}
+.select-input-type, .select-input-id{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align-last: center;
+ text-align: center;
+  cursor: pointer;
+  height: 2.4rem;
+  width: 15rem;
+  margin-bottom: 4%;
+  border: none;
+  border-radius: 15px;
+  background-color:white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.forwardButtonUpdate{
+  background-color: #27ae60;
+  width: 15rem;
+}
+.forwardButtonBack{
+  width: 15rem;
+}
+.text-input-update{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  height: 2.4rem;
+  width: 15rem;
+  margin-bottom: 4%;
+  border: none;
+  border-radius: 15px;
+  background-color:white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.newDataTitle{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.forwardButtonDelete{
+  background-color: #e84118;
+  width: 15rem;
 }
 
 .addRoomButton{

@@ -5,7 +5,7 @@ import Logo from "../images/logo.png";
 
 
 
-export const RemoveRoom = () => {
+export const EditRoom = () => {
     const {
         setLoading,
         getRooms,
@@ -23,7 +23,7 @@ export const RemoveRoom = () => {
           <div className="myForm">
             <img src={Logo} alt="Logo" />
             <div className="item">
-          <h2>Delete a Room</h2>
+          <h2>Edit a Room</h2>
     <section className="dropdown-update">
     <select
               className="select-input-type"
@@ -44,14 +44,57 @@ export const RemoveRoom = () => {
               <option value="king-size">02</option>
             </select>
     </section>
-   
+    <section className="dropdown-update-input">
+    <h2 className="newDataTitle">Enter New Data</h2>
+    <select
+              className="select-input-type"
+              defaultValue="default"
+              //onChange={(e) => setRoomType(e.target.value)}
+            >
+              <option value="default" >New Type</option>
+              <option value="single">Single</option>
+              <option value="king-size">King Size</option>
+            </select>
+            <input
+           // onChange={(e) => setPrice(e.target.value)}
+          //  value={price}
+            type="number"
+            id="price"
+            name="price"
+            className="text-input-update"
+            placeholder="price (RON)"
+          />
+    </section>
+
+    <section className="dropdown-update-input">
+
+    <select
+              className="select-input-type"
+              defaultValue="default"
+              //onChange={(e) => setRoomType(e.target.value)}
+            >
+              <option value="default" >Type</option>
+              <option value="single">Single</option>
+              <option value="king-size">King Size</option>
+            </select>
+            <select
+              className="select-input-id"
+              defaultValue="default"
+              //onChange={(e) => setRoomType(e.target.value)}
+            >
+              <option value="default" >Select Room</option>
+              <option value="single">01</option>
+              <option value="king-size">02</option>
+            </select>
+    </section>
+
     <button
             type="button"
-            className="forwardButton forwardButtonDelete"
+            className="forwardButton forwardButtonUpdate"
             disabled={false}
          //   onClick={() => {addRoom();setCurrentPage(1)}}
           > 
-          <b>Delete Room</b>
+          <b>Edit Room</b>
 
 
           </button>
@@ -71,4 +114,4 @@ export const RemoveRoom = () => {
       );
 }
 
-export default RemoveRoom;
+export default EditRoom;

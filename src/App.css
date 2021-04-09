@@ -320,7 +320,7 @@ caption{
 
 .dropdown-update{
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 800px) {
   .dropdown-update {

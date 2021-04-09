@@ -72,7 +72,6 @@ function CoreContextProvider(props) {
     });
   };
 
-
   const EditRoom = () => {
     setLoading(true);
     var myHeaders = new Headers();
@@ -168,7 +167,6 @@ function CoreContextProvider(props) {
 
           if (data[i].type === "king-size") {
             kingRoom++;
-           
           }
 
           if (data[i].type === "king-size") {
@@ -178,7 +176,7 @@ function CoreContextProvider(props) {
           }
         }
         setTotalKing(kingRoom);
-      
+
         setKingRentedRoom(rentedKing);
         setTotalSingle(singleRoom);
         setSingleRentedRoom(rentedSingle);
